@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{81CFCCCC-F31A-42E1-9BC1-B8C86024C942}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{D3E5E137-F0ED-4C5C-931A-525632503B82}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ul", "Ul", "{A0430EF2-A22C-4BCA-BBE3-1DCC9C5295C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{215A3DF7-5D6E-4C8F-AD68-1A3DDFF5FE1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5EDF88AE-0367-4064-B4AF-1D358BB23493}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{116AA37C-CF90-42AE-A016-AC9A083349DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Domain", "TimeOffTracker.Domain\TimeOffTracker.Domain.csproj", "{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Application", "TimeOffTracker.Application\TimeOffTracker.Application.csproj", "{00DBEFBE-9212-4B97-8A74-9E23B47533F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00DBEFBE-9212-4B97-8A74-9E23B47533F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00DBEFBE-9212-4B97-8A74-9E23B47533F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00DBEFBE-9212-4B97-8A74-9E23B47533F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00DBEFBE-9212-4B97-8A74-9E23B47533F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A0430EF2-A22C-4BCA-BBE3-1DCC9C5295C5} = {81CFCCCC-F31A-42E1-9BC1-B8C86024C942}
+		{215A3DF7-5D6E-4C8F-AD68-1A3DDFF5FE1E} = {81CFCCCC-F31A-42E1-9BC1-B8C86024C942}
+		{5EDF88AE-0367-4064-B4AF-1D358BB23493} = {81CFCCCC-F31A-42E1-9BC1-B8C86024C942}
+		{116AA37C-CF90-42AE-A016-AC9A083349DC} = {81CFCCCC-F31A-42E1-9BC1-B8C86024C942}
+		{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402} = {5EDF88AE-0367-4064-B4AF-1D358BB23493}
+		{00DBEFBE-9212-4B97-8A74-9E23B47533F5} = {5EDF88AE-0367-4064-B4AF-1D358BB23493}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A9BC0F6-43D4-41E3-9A29-1B4E6395E52E}
+	EndGlobalSection
+EndGlobal

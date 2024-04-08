@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using TimeOffTracker.Application.Contracts.Data_Access;
+using TimeOffTracker.Application.Exceptions;
 
 namespace TimeOffTracker.Application.Features.LeaveType.Commands.CreateLeaveType
 {
@@ -17,6 +18,13 @@ namespace TimeOffTracker.Application.Features.LeaveType.Commands.CreateLeaveType
         public async Task<int> Handle(CreateLeaveTypeCommand request, CancellationToken cancellationToken)
         {
             //Validate incoming data
+            var validator = new CreateLeaveTypeCommandValidator();
+            var validationResult = await validator.ValidateAsync(request);
+
+            if (validationResult.Errors.Any())
+            {
+                throw new BadRequestException("Invalid LeaveType", validationResult);
+            }
 
             //Convert to Domain entity object
             var leaveTypeToCreate = _mapper.Map<Domain.LeaveType>(request);

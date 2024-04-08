@@ -15,10 +15,10 @@ namespace TimeOffTracker.Application.Features.LeaveType.Commands.DeleteLeaveType
         }
         public async Task<Unit> Handle(DeleteLeaveTypeCommand request, CancellationToken cancellationToken)
         {
-            //Convert to domain entity object
+            //retrieve domain entity object
             var leaveTypeToDelete = await _leaveTypeRepository.GetByIdAsync(request.Id);
 
-            // veerify that  records
+            // veerify that  records exists
 
             //Remove from database
             await _leaveTypeRepository.DeleteAsync(leaveTypeToDelete);

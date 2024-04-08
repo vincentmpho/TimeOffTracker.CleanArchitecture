@@ -19,6 +19,7 @@ namespace TimeOffTracker.Application.Features.LeaveType.Commands.UpdateLeaveType
         {
             //Validate incoming data
 
+
             //Convert to domain entity object
             var leaveTypeToUpdate = _mapper.Map<Domain.LeaveType>(request);
 

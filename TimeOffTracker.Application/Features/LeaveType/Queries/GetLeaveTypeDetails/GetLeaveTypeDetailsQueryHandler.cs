@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using MediatR;
 using TimeOffTracker.Application.Contracts.Data_Access;
+using TimeOffTracker.Application.Exceptions;
 using static TimeOffTracker.Application.Features.LeaveType.Queries.GetLeaveTypeDetails.GetLeaveTypeQuery;
 
 namespace TimeOffTracker.Application.Features.LeaveType.Queries.GetLeaveTypeDetails
@@ -21,6 +22,12 @@ namespace TimeOffTracker.Application.Features.LeaveType.Queries.GetLeaveTypeDeta
         {
             //Query the database
             var leaveTypes = await _leaveTypeRepository.GetByIdAsync(request.Id);
+
+            // verify that  records exists
+            if (leaveTypes == null)
+            {
+                throw new NotFoundException(nameof(LeaveType), request.Id);
+            }
 
             //Convert data object to DTO Objects
             var  data = _mapper.Map<LeaveTypeDetailsDto>(leaveTypes);

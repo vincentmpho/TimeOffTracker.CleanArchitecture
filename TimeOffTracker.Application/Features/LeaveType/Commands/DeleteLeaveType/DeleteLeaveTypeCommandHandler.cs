@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using TimeOffTracker.Application.Contracts.Data_Access;
+using TimeOffTracker.Application.Exceptions;
 
 namespace TimeOffTracker.Application.Features.LeaveType.Commands.DeleteLeaveType
 {
@@ -18,7 +19,11 @@ namespace TimeOffTracker.Application.Features.LeaveType.Commands.DeleteLeaveType
             //retrieve domain entity object
             var leaveTypeToDelete = await _leaveTypeRepository.GetByIdAsync(request.Id);
 
-            // veerify that  records exists
+            // verify that  records exists
+            if (leaveTypeToDelete == null)
+            {
+                throw new NotFoundException(nameof(LeaveType),request.Id);
+            }
 
             //Remove from database
             await _leaveTypeRepository.DeleteAsync(leaveTypeToDelete);

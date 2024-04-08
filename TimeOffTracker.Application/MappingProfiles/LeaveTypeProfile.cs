@@ -8,7 +8,9 @@ namespace TimeOffTracker.Application.MappingProfiles
     {
         public LeaveTypeProfile() 
         {
+            //source to,  Destination
             CreateMap<LeaveTypeDto, LeaveType>().ReverseMap();
+            CreateMap<LeaveType, LeaveTypeDetailsDto>().ReverseMap();
         }
     }
 }

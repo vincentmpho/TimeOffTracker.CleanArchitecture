@@ -13,7 +13,7 @@ namespace TimeOffTracker.Persistence
             //register DB context
             services.AddDbContext<HRDatabaseContext>(options =>
             {
-                options.UseSqlServer(configuration.GetConnectionString("HRDatabaseConnectionString"))
+                options.UseSqlServer(configuration.GetConnectionString("HRDatabaseConnectionString"));
             });
 
             return services;

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Domain", "Ti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Application", "TimeOffTracker.Application\TimeOffTracker.Application.csproj", "{00DBEFBE-9212-4B97-8A74-9E23B47533F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Persistence", "TimeOffTracker.Persistence\TimeOffTracker.Persistence.csproj", "{7600F1C6-491D-42EA-AC33-04634E23B3AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{00DBEFBE-9212-4B97-8A74-9E23B47533F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00DBEFBE-9212-4B97-8A74-9E23B47533F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00DBEFBE-9212-4B97-8A74-9E23B47533F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7600F1C6-491D-42EA-AC33-04634E23B3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7600F1C6-491D-42EA-AC33-04634E23B3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7600F1C6-491D-42EA-AC33-04634E23B3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7600F1C6-491D-42EA-AC33-04634E23B3AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{116AA37C-CF90-42AE-A016-AC9A083349DC} = {81CFCCCC-F31A-42E1-9BC1-B8C86024C942}
 		{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402} = {5EDF88AE-0367-4064-B4AF-1D358BB23493}
 		{00DBEFBE-9212-4B97-8A74-9E23B47533F5} = {5EDF88AE-0367-4064-B4AF-1D358BB23493}
+		{7600F1C6-491D-42EA-AC33-04634E23B3AA} = {215A3DF7-5D6E-4C8F-AD68-1A3DDFF5FE1E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A9BC0F6-43D4-41E3-9A29-1B4E6395E52E}

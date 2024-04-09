@@ -9,5 +9,6 @@ namespace TimeOffTracker.Application.Contracts.Data_Access
 {
     public interface ILeaveTypeRepository : IGenericRepository<LeaveType>
     {
+        Task<bool> IsLeaveTypeUnique(string name);
     }
 }

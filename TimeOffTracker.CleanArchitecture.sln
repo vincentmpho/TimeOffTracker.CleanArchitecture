@@ -15,11 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5EDF88AE-0
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{116AA37C-CF90-42AE-A016-AC9A083349DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Domain", "TimeOffTracker.Domain\TimeOffTracker.Domain.csproj", "{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOffTracker.Domain", "TimeOffTracker.Domain\TimeOffTracker.Domain.csproj", "{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Application", "TimeOffTracker.Application\TimeOffTracker.Application.csproj", "{00DBEFBE-9212-4B97-8A74-9E23B47533F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOffTracker.Application", "TimeOffTracker.Application\TimeOffTracker.Application.csproj", "{00DBEFBE-9212-4B97-8A74-9E23B47533F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Persistence", "TimeOffTracker.Persistence\TimeOffTracker.Persistence.csproj", "{7600F1C6-491D-42EA-AC33-04634E23B3AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimeOffTracker.Persistence", "TimeOffTracker.Persistence\TimeOffTracker.Persistence.csproj", "{7600F1C6-491D-42EA-AC33-04634E23B3AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeOffTracker.Infrastructure", "TimeOffTracker.Infrastructure\TimeOffTracker.Infrastructure.csproj", "{E4EE133C-2727-4053-9364-FAE32300FD3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7600F1C6-491D-42EA-AC33-04634E23B3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7600F1C6-491D-42EA-AC33-04634E23B3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7600F1C6-491D-42EA-AC33-04634E23B3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4EE133C-2727-4053-9364-FAE32300FD3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4EE133C-2727-4053-9364-FAE32300FD3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4EE133C-2727-4053-9364-FAE32300FD3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4EE133C-2727-4053-9364-FAE32300FD3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{EAFDC5CD-6D81-4B85-BC24-4B1C3DB12402} = {5EDF88AE-0367-4064-B4AF-1D358BB23493}
 		{00DBEFBE-9212-4B97-8A74-9E23B47533F5} = {5EDF88AE-0367-4064-B4AF-1D358BB23493}
 		{7600F1C6-491D-42EA-AC33-04634E23B3AA} = {215A3DF7-5D6E-4C8F-AD68-1A3DDFF5FE1E}
+		{E4EE133C-2727-4053-9364-FAE32300FD3F} = {215A3DF7-5D6E-4C8F-AD68-1A3DDFF5FE1E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A9BC0F6-43D4-41E3-9A29-1B4E6395E52E}
